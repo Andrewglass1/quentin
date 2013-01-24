@@ -1,0 +1,36 @@
+// Place all the styles related to the welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#container       { width: 70%; margin: auto; padding-top: 40px; padding-bottom: 50px;}
+#navigation      { }
+
+#nav-link-list                   { list-style-type: none; padding: 20px 0 20px 0;}
+#nav-link-list li                { display: inline; margin-left: 8%; font-size: 30px; line-height: 45px;}
+#nav-link-list li:first-child    { margin-left: 0px;}
+
+.nav-link                         { color: #206BA4; padding: 10px 10px 10px 10px; }
+.nav-link:hover                   { color: #206BA4; text-decoration: none; }
+
+.on                               { color: white; background-color: #206BA4; }
+.on:hover                         { color: white; text-decoration: none; }
+
+
+.section { display: none}
+.active  { display: block;}
+
+#content {}
+
+// about 
+
+#profile-image { margin: auto; display: block;}
+#about h3      { text-align: center;}
+
+
+//videos
+
+#video-list     { list-style-type: none; }
+#video-list li  { display: inline; }
+
+.vid-image      { width: 100%}
+.vid-link       { width: 45%; display:inline-block;}

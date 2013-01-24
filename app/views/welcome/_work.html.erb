@@ -1,0 +1,7 @@
+<div id="work" class="section">
+    <% Video.all.each do |video| %>
+      
+      <a href="#" class="vid-link" data-link="<%= video.link %>"><img class="vid-image" src="<%= video.photo %>"></a>
+
+    <% end %>
+</div>
