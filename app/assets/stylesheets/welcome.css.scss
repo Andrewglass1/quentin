@@ -5,21 +5,27 @@
 #container       { width: 70%; margin: auto; padding-top: 40px; padding-bottom: 50px;}
 #navigation      { }
 
-#nav-link-list                   { list-style-type: none; padding: 20px 0 20px 0;}
+#header h1 {margin: 0px;}
+#header h3 {margin: 0px;}
+
+hr {margin: 10px 0 10px 0;}
+
+
+#nav-link-list                   { list-style-type: none; padding: 10px 0 10px 0;}
 #nav-link-list li                { display: inline; margin-left: 8%; font-size: 30px; line-height: 45px;}
 #nav-link-list li:first-child    { margin-left: 0px;}
 
-.nav-link                         { color: #206BA4; padding: 10px 10px 10px 10px; }
-.nav-link:hover                   { color: #206BA4; text-decoration: none; }
+.nav-link                         { color: #CC6600; padding: 10px 10px 10px 10px; }
+.nav-link:hover                   { color: #CC6600; text-decoration: none; }
 
-.on                               { color: white; background-color: #206BA4; }
-.on:hover                         { color: white; text-decoration: none; }
+.on                               { color: #CC6600; background-color: #D5D50D; }
+.on:hover                         { color: #CC6600; text-decoration: none; }
 
 
-.section { display: none}
+.section { display: none; padding-left: 30px; }
 .active  { display: block;}
 
-#content {}
+#content { margin-top: 30px;}
 
 // about 
 
@@ -32,5 +38,14 @@
 #video-list     { list-style-type: none; }
 #video-list li  { display: inline; }
 
-.vid-image      { width: 100%}
+.vid-image      { width: 100%; margin-bottom: 3px;}
 .vid-link       { width: 45%; display:inline-block;}
+
+//cv
+
+.cv-line { font-size: 28px; font-weight: bold; margin-top: 40px; line-height: 28px;}
+.first   { margin-top: 0px;}
+.date    { font-size: 16px; font-style: italic; margin-left: 15px; color: #D5D50D;}
+.job     { font-size: 22px; line-height: 25px;}
+
+

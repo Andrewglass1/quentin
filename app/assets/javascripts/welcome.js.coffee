@@ -6,7 +6,8 @@ $ ->
   clickWatcher()
 
 clickWatcher = ->
-  $('.nav-link').click ->
+  $('.nav-link').click (event) ->
+    event.preventDefault()
     show =  $(this).attr('data-name')
     hideAllContent()
     showContent(show)
