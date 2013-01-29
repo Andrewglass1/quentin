@@ -1,0 +1,15 @@
+<div id="work" class="section video-slider">
+  <div id="window">
+    <ul id="video-slider-list" data-current="1" data-maxspots="<%= Video.all.count %>">
+
+      <% Video.all.each do |video| %>
+        
+        <li>
+          <a href="http://www.youtube.com/embed/H620VHaNjfA?autoplay=1" rel="shadowbox" class="vid-link" data-link="<%= video.link %>"><img class="vid-image-slider" src="<%= video.photo %>"></a>
+
+        </li>
+      <% end %>
+    </ul>
+  </div>
+</div>
+

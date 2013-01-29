@@ -11,7 +11,8 @@
 hr {margin: 10px 0 10px 0;}
 
 
-#nav-link-list                   { list-style-type: none; padding: 10px 0 10px 0;}
+#nav-link-list                   { list-style-type: none; padding: 10px 0 10px 0; margin: 0 auto 0 auto; width: 700px;}
+
 #nav-link-list li                { display: inline; margin-left: 8%; font-size: 30px; line-height: 45px;}
 #nav-link-list li:first-child    { margin-left: 0px;}
 
@@ -29,17 +30,28 @@ hr {margin: 10px 0 10px 0;}
 
 // about 
 
-#profile-image { margin: auto; display: block;}
+#profile-image { margin: auto; float: left; border-radius: 4px;}
+#profile-image:hover {opacity: .8;}
 #about h3      { text-align: center;}
+#phone         { margin-bottom: 30px;}
+#email         { padding-top: 30px;}
 
 
 //videos
 
-#video-list     { list-style-type: none; }
-#video-list li  { display: inline; }
-
 .vid-image      { width: 100%; margin-bottom: 3px;}
 .vid-link       { width: 45%; display:inline-block;}
+
+//videos with slider
+
+.video-slider {         padding-left: 0px;
+  .vid-link             { margin: 0px; display:inline;}
+  .vid-image-slider     { height:400px; width:533px; margin-left: -4px;}
+  #video-slider-list    { white-space: nowrap; position: relative; margin: 0px; right: 0px;}
+  #video-slider-list li { display:inline;}
+  #window               { height:400px; width:533px; overflow-x: hidden; margin: 0 auto 0 auto;}
+
+}
 
 //cv
 
