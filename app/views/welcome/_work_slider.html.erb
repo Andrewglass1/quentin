@@ -1,4 +1,7 @@
 <div id="work" class="section video-slider active">
+  <%= link_to content_tag("span", "‹"), "", :id => "move-left", :class => "shifter shifter-left" %>
+  <%= link_to content_tag("span", "›"), "", :id => "move-right", :class => "shifter shifter-right" %>
+
   <div id="window">
     <ul id="video-slider-list" data-current="1" data-maxspots="<%= Video.all.count %>">
 
@@ -14,7 +17,5 @@
       <%= link_to "", "", 'data-id' => "#{i +1}", :class=> "video-page circle#{' active-video-page' if i == 0}" %>
     <% end %>
   </p>
-<%= link_to content_tag("span", "‹"), "", :id => "move-left", :class => "shifter shifter-left" %>
-<%= link_to content_tag("span", "›"), "", :id => "move-right", :class => "shifter shifter-right" %>
 </div>
 
