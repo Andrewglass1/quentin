@@ -22,7 +22,7 @@ $(document).ready(function(){
 
   function turnToSpot(new_spot){
     if(new_spot >= 1 && new_spot <= max_pages){
-      distance_interval = 600
+      distance_interval = 640
 
       new_position = distance_interval * (new_spot -1)
 

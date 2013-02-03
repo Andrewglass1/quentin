@@ -1,13 +1,12 @@
 <div id="work" class="section video-slider active">
-  <%= link_to content_tag("span", "‹"), "", :id => "move-left", :class => "shifter shifter-left" %>
-  <%= link_to content_tag("span", "›"), "", :id => "move-right", :class => "shifter shifter-right" %>
-
+  <%= link_to content_tag("span", "‹", :class => "arrow"), "", :id => "move-left", :class => "shifter shifter-left" %>
+  <%= link_to content_tag("span", "›", :class => "arrow"), "", :id => "move-right", :class => "shifter shifter-right" %>
   <div id="window">
     <ul id="video-slider-list" data-current="1" data-maxspots="<%= Video.all.count %>">
 
       <% Video.all.each do |video| %>
         <li>
-          <a href="http://www.youtube.com/embed/H620VHaNjfA?autoplay=1" rel="shadowbox" class="vid-link" data-link="<%= video.link %>"><img class="vid-image-slider" src="http://api.ning.com/files/qKX6gakInqmtVnrmiHJgD4OiS4XdjpNQOkNRFOC3eoC*jaAZq-thQW5xwzbDX9bJpurgvapaBt*H4kNlBI2UPg__/091211_rihanna_5110912121013.gif"></a>
+          <a href="<%= video.link %>" rel="shadowbox" class="vid-link" data-link="<%= video.link %>"><img class="vid-image-slider" src="<%= video.photo %>"></a>
         </li>
       <% end %>
     </ul>

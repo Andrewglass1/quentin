@@ -7,9 +7,6 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 
-Video.create(:photo => "http://2.bp.blogspot.com/-7cBrh3HKhGU/Tx8hbyu3W6I/AAAAAAAAAzU/4nfqo0BIfyc/s1600/Coastal_Holiday%252C_Sand_Beach.jpg", :link => "http://www.youtube.com/embed/H620VHaNjfA?autoplay=1")
-Video.create(:photo => "http://2.bp.blogspot.com/-7cBrh3HKhGU/Tx8hbyu3W6I/AAAAAAAAAzU/4nfqo0BIfyc/s1600/Coastal_Holiday%252C_Sand_Beach.jpg", :link => "http://www.youtube.com/embed/H620VHaNjfA?autoplay=1")
-Video.create(:photo => "http://2.bp.blogspot.com/-7cBrh3HKhGU/Tx8hbyu3W6I/AAAAAAAAAzU/4nfqo0BIfyc/s1600/Coastal_Holiday%252C_Sand_Beach.jpg", :link => "http://www.youtube.com/embed/H620VHaNjfA?autoplay=1")
-Video.create(:photo => "http://2.bp.blogspot.com/-7cBrh3HKhGU/Tx8hbyu3W6I/AAAAAAAAAzU/4nfqo0BIfyc/s1600/Coastal_Holiday%252C_Sand_Beach.jpg", :link => "http://www.youtube.com/embed/H620VHaNjfA?autoplay=1")
-Video.create(:photo => "http://2.bp.blogspot.com/-7cBrh3HKhGU/Tx8hbyu3W6I/AAAAAAAAAzU/4nfqo0BIfyc/s1600/Coastal_Holiday%252C_Sand_Beach.jpg", :link => "http://www.youtube.com/embed/H620VHaNjfA?autoplay=1")
-Video.create(:photo => "http://2.bp.blogspot.com/-7cBrh3HKhGU/Tx8hbyu3W6I/AAAAAAAAAzU/4nfqo0BIfyc/s1600/Coastal_Holiday%252C_Sand_Beach.jpg", :link => "http://www.youtube.com/embed/H620VHaNjfA?autoplay=1")
+Video.create(:photo => "https://s3.amazonaws.com/lindseyeve/Bike_Movie_Still.jpg", :link => "http://www.youtube.com/embed/96oZnzLjcL8?autoplay=1")
+Video.create(:photo => "https://s3.amazonaws.com/lindseyeve/Petz_Movie_Still.jpg", :link => "http://www.youtube.com/embed/IdSPBvznwaQ?autoplay=1")
+Video.create(:photo => "https://s3.amazonaws.com/lindseyeve/Windmill_Still.jpg", :link => "http://www.youtube.com/embed/GI1ZfN4HIfw?autoplay=1")
