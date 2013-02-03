@@ -2,11 +2,18 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+
+body {
+background-color:#d5cea6;
+}
+
+
+
 #container       { width: 70%; margin: auto; padding-top: 40px; padding-bottom: 50px;}
 #navigation      { }
 
 #header h1 {margin: 0px;}
-#header h3 {margin: 0px;}
+#header h3 {margin: 0px; color: #F5003D;}
 
 hr {margin: 10px 0 10px 0;}
 
@@ -16,11 +23,11 @@ hr {margin: 10px 0 10px 0;}
 #nav-link-list li                { display: inline; margin-left: 8%; font-size: 30px; line-height: 45px;}
 #nav-link-list li:first-child    { margin-left: 0px;}
 
-.nav-link                         { color: #CC6600; padding: 10px 10px 10px 10px; }
-.nav-link:hover                   { color: #CC6600; text-decoration: none; }
+.nav-link                         { color: white; padding: 10px 10px 10px 10px; }
+.nav-link:hover                   { color: white; text-decoration: none; }
 
-.on                               { color: #CC6600; background-color: #D5D50D; }
-.on:hover                         { color: #CC6600; text-decoration: none; }
+.on                               { color: white; background-color: #F5003D; }
+.on:hover                         { color: white; text-decoration: none; }
 
 
 .section { display: none; padding-left: 30px; }
@@ -46,18 +53,24 @@ hr {margin: 10px 0 10px 0;}
 
 .video-slider {         padding-left: 0px;
   .vid-link             { margin: 0px; display:inline;}
-  .vid-image-slider     { height:400px; width:533px; margin-left: -4px;}
-  #video-slider-list    { white-space: nowrap; position: relative; margin: 0px; right: 0px;}
-  #video-slider-list li { display:inline;}
-  #window               { height:400px; width:533px; overflow-x: hidden; margin: 0 auto 0 auto;}
+  .vid-image-slider     { margin: 0; height: 400px; width: 600px;}
+  #video-slider-list    { position: relative; white-space: nowrap; margin: 0; right: 0px;}
+  #video-slider-list li { margin: 0; display: table-cell; width: auto; text-align: center;}
+  #window               { height:400px; width:600px; margin: 0 auto 0 auto; overflow-x: hidden;}//
 
 }
+.circle                 { display:inline-block; width:30px; height:30px; border-radius:30px; position: relative; bottom: 5px; background:black; }
+.active-video-page      { bottom: 0; width:40px; height:40px; border-radius:40px; background: #F5003D;}
+#page-links             { text-align: center; margin-top: 30px;}
+
+.shifter                { font-size: 80px;}
+
 
 //cv
 
 .cv-line { font-size: 28px; font-weight: bold; margin-top: 40px; line-height: 28px;}
 .first   { margin-top: 0px;}
-.date    { font-size: 16px; font-style: italic; margin-left: 15px; color: #D5D50D;}
-.job     { font-size: 22px; line-height: 25px;}
+.date    { font-size: 16px; font-style: italic; margin-left: 15px; color: #F5003D;}
+.job     { font-size: 22px; line-height: 25px; margin-left: 20px;}
 
 
