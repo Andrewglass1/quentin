@@ -2,9 +2,9 @@
   <%= link_to content_tag("span", "‹", :class => "arrow"), "", :id => "move-left", :class => "shifter shifter-left" %>
   <%= link_to content_tag("span", "›", :class => "arrow"), "", :id => "move-right", :class => "shifter shifter-right" %>
   <div id="window">
-    <ul id="video-slider-list" data-current="1" data-maxspots="<%= Video.all.count %>">
+    <ul id="video-slider-list" data-current="1" data-maxspots="<%= @videos.count %>">
 
-      <% Video.all.each do |video| %>
+      <% @videos.each do |video| %>
         <li>
           <a href="<%= video.link %>" rel="shadowbox" class="vid-link" data-link="<%= video.link %>"><img class="vid-image-slider" src="<%= video.photo %>"></a>
         </li>
@@ -12,7 +12,7 @@
     </ul>
   </div>
   <p id="page-links">
-    <% Video.all.count.times do |i| %>
+    <% @videos.count.times do |i| %>
       <%= link_to "", "", 'data-id' => "#{i +1}", :class=> "video-page circle#{' active-video-page' if i == 0}" %>
     <% end %>
   </p>
