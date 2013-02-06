@@ -3,30 +3,26 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
-body {
-background-color:#d5cea6;
-}
-
+body { background-color:#FFE273;}
 
 
 #container       { width: 70%; margin: auto; padding-top: 40px; padding-bottom: 50px;}
 #navigation      { }
 
 #header h1 {margin: 0px;}
-#header h3 {margin: 0px; color: #F5003D;}
+#header h3 {margin: 0px; color: #0F4DA8;}
 
-hr {margin: 10px 0 10px 0;}
-
+hr {margin: 10px 0 10px 0; border-color: #333;}
 
 #nav-link-list                   { list-style-type: none; padding: 10px 0 10px 0; margin: 0 auto 0 auto; width:530px;}
 
 #nav-link-list li                { display: inline; margin-left: 8%; font-size: 30px; line-height: 45px;}
 #nav-link-list li:first-child    { margin-left: 0px;}
 
-.nav-link                         { color: white; padding: 10px 10px 10px 10px; }
-.nav-link:hover                   { color: white; text-decoration: none; }
+.nav-link                         { color: #333; padding: 10px 10px 10px 10px; }
+.nav-link:hover                   { color: #0F4DA8; text-decoration: none; }
 
-.on                               { color: white; background-color: #F5003D; }
+.on                               { color: white; background-color: #0F4DA8; }
 .on:hover                         { color: white; text-decoration: none; }
 
 
@@ -41,7 +37,9 @@ hr {margin: 10px 0 10px 0;}
 #profile-image:hover {opacity: .8;}
 #about h3      { text-align: center;}
 #phone         { margin-bottom: 30px;}
-#email         { padding-top: 30px; font-size: 30px;}
+#email         { padding-top: 30px; font-size: 30px;
+a{color:#0F4DA8;}
+}
 #summary       { font-size: 18px;}
 
 
@@ -57,24 +55,26 @@ hr {margin: 10px 0 10px 0;}
   .vid-image-slider     { margin: 0; height: 480px; width: 640px;}
   #video-slider-list    { position: relative; white-space: nowrap; margin: 0; right: 0px;}
   #video-slider-list li { margin: 0; display: table-cell; width: auto; text-align: center;}
-  #window               { height:480px; width:640px; margin: 0 auto 0 auto; overflow-x: hidden;}//
+  #window               { height:480px; width:640px; margin: 0 auto 0 auto; overflow-x: hidden;}
 
 }
 .circle                 { display:inline-block; width:30px; height:30px; border-radius:30px; position: relative; bottom: 5px; background:black; }
-.active-video-page      { bottom: 0; width:40px; height:40px; border-radius:40px; background: #F5003D;}
+.active-video-page      { bottom: 0; width:40px; height:40px; border-radius:40px; background: #0F4DA8;}
 #page-links             { text-align: center; margin-top: 30px;}
 
-.shifter                { font-size: 200px; position: relative; margin-top: 180px;}
+.shifter                { font-size: 200px; position: relative; margin-top: 210px; font-family: "Gurmukhi MN"; color: #0F4DA8}
 .shifter:hover          { text-decoration: none;}
 .shifter-left           { float: left;}
 .shifter-right          { float: right;}
-
+.play-button            { position: absolute; opacity: 0.82; height: 150px; margin-left: 252px; margin-top: 170px;}
 
 //cv
 
-.cv-line { font-size: 28px; font-weight: bold; margin-top: 40px; line-height: 28px;}
+.cv-line { font-size: 28px; font-weight: bold; margin-top: 40px; line-height: 28px; 
+a{color:#0F4DA8}
+}
 .first   { margin-top: 0px;}
-.date    { font-size: 16px; font-style: italic; margin-left: 15px; color: #F5003D;}
+.date    { font-size: 16px; font-style: italic; margin-left: 15px; color: #FF6400;}
 .job     { font-size: 22px; line-height: 25px; margin-left: 20px;}
 
 
