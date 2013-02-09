@@ -29,7 +29,7 @@ hr {margin: 10px 0 10px 0; border-color: #333;}
 .section { display: none; padding-left: 30px; }
 .active  { display: block;}
 
-#content { margin-top: 30px;}
+#content { margin-top: 30px; position: relative;}
 
 // about 
 
@@ -62,10 +62,10 @@ a{color:#0F4DA8;}
 .active-video-page      { bottom: 0; width:40px; height:40px; border-radius:40px; background: #0F4DA8;}
 #page-links             { text-align: center; margin-top: 30px;}
 
-.shifter                { font-size: 200px; position: relative; margin-top: 210px; font-family: "Gurmukhi MN"; color: #0F4DA8}
+.shifter                { font-size: 200px; position: absolute; top: 215px; font-family: "Gurmukhi MN"; color: #0F4DA8}
 .shifter:hover          { text-decoration: none;}
-.shifter-left           { float: left;}
-.shifter-right          { float: right;}
+.shifter-left           { left: 0;}
+.shifter-right          { right: 0;}
 .play-button            { position: absolute; opacity: 0.82; height: 150px; margin-left: 252px; margin-top: 170px;}
 
 //cv
