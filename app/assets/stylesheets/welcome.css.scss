@@ -37,17 +37,17 @@ hr {margin: 10px 0 10px 0; border-color: #333;}
 #profile-image:hover {opacity: .8;}
 #about h3      { text-align: center;}
 #phone         { margin-bottom: 30px;}
-#email         { padding-top: 100px; font-size: 30px;
+#email         { padding-top: 50px; font-size: 30px;
   a{color:#0F4DA8;}
 }
 
 #soclinks {
   margin: 0 auto;
+  text-align: center;
 }
  
 .soclink {
   height: 100px;
-  margin: 20px;
   -webkit-transition: all 0.5s ease-out;
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
