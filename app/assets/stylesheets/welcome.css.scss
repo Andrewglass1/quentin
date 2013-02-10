@@ -31,7 +31,12 @@ hr {margin: 10px 0 10px 0; border-color: #333;}
 
 #content { margin-top: 30px; position: relative;}
 
+
+
+
+
 // about 
+////////////////////////////////////////////////////
 
 #profile-image { margin: auto; float: left; border-radius: 4px;}
 #profile-image:hover {opacity: .8;}
@@ -61,6 +66,7 @@ hr {margin: 10px 0 10px 0; border-color: #333;}
 
 
 //videos
+////////////////////////////////////////////////////
 
 .vid-image      { width: 100%; margin-bottom: 3px;}
 .vid-link       { width: 45%; display:inline-block;}
@@ -81,11 +87,13 @@ hr {margin: 10px 0 10px 0; border-color: #333;}
 
 .shifter                { font-size: 200px; position: absolute; top: 215px; font-family: "Gurmukhi MN"; color: #0F4DA8}
 .shifter:hover          { text-decoration: none;}
-.shifter-left           { left: 0;}
-.shifter-right          { right: 0;}
+.shifter-left           { left: 0; margin-right: 20px;}
+.shifter-right          { right: 0; margin-left: 10px;}
 .play-button            { position: absolute; opacity: 0.82; height: 150px; margin-left: 252px; margin-top: 170px;}
 
 //cv
+////////////////////////////////////////////////////
+
 
 .cv-line { font-size: 26px; font-weight: bold; margin-top: 20px; margin-bottom: 5px; line-height: 28px; 
 a{color:#0F4DA8}
