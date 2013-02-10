@@ -1,6 +1,10 @@
 <div id="work" class="section video-slider active">
+  <div id="arrow-container-left">
   <%= link_to content_tag("span", "‹", :class => "arrow"), "", :id => "move-left", :class => "shifter shifter-left" %>
+  </div>
+  <div>
   <%= link_to content_tag("span", "›", :class => "arrow"), "", :id => "move-right", :class => "shifter shifter-right" %>
+  </div>
   <div id="window">
     <ul id="video-slider-list" data-current="1" data-maxspots="<%= @videos.count %>">
 

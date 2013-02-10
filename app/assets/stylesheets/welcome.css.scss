@@ -87,8 +87,9 @@ hr {margin: 10px 0 10px 0; border-color: #333;}
 
 .shifter                { font-size: 200px; position: absolute; top: 215px; font-family: "Gurmukhi MN"; color: #0F4DA8}
 .shifter:hover          { text-decoration: none;}
-.shifter-left           { left: 0; margin-right: 20px;}
-.shifter-right          { right: 0; margin-left: 10px;}
+.shifter-left           { left: 0;}
+.shifter-right          { right: 0;}
+
 .play-button            { position: absolute; opacity: 0.82; height: 150px; margin-left: 252px; margin-top: 170px;}
 
 //cv
@@ -98,6 +99,7 @@ hr {margin: 10px 0 10px 0; border-color: #333;}
 .cv-line { font-size: 26px; font-weight: bold; margin-top: 20px; margin-bottom: 5px; line-height: 28px; 
 a{color:#0F4DA8}
 }
+.short {font-size: 23px;}
 .first   { margin-top: 0px;}
 .date    { font-size: 14px; font-style: italic; margin-left: 15px; color: #FF6400;}
 .job     { font-size: 18px; line-height: 25px; margin-left: 20px; margin-bottom: 5px;}
