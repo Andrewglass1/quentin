@@ -3,6 +3,38 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
+.container { width: 900px; margin: auto; padding-top: 40px; }
+
+#left {
+  width: 200px;
+  float: left;
+  margin-right: 10px;
+  padding: 25px 10px 0px 10px;
+  border-top: 2px solid #000000;
+}
+#right {
+  width: 600px;
+  float: left;
+  border-top: 2px solid #000000;
+  padding-top: 25px;
+}
+#logo   { width: 100%}
+#brand  { width: 100%; margin-top: 25px;}
+
+.videobox {
+  float: left;
+  width: 290px;
+  overflow: hidden;
+  margin: 0 5px 10px 5px;
+  position: relative;
+  background-color: #000000;
+  vertical-align: middle;
+  padding: -5px 0px 0px 0px;
+  &:hover {}
+}
+
+.vidimage { width: 100%;}
+
 body { background-color:#CCCCCC;}
 
 
