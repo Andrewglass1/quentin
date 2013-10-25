@@ -2,20 +2,42 @@
 <div class="container">
 
   <div id="left">
-      <%= image_tag "http://static.tumblr.com/otq4jsy/MJXliqbug/mm.png", :id => "logo" %>
-      <div id="brand">
-        <p>Lindsey Eve Jacobson</p>
-        <p>Video Editor</p>
-        <p>Lindsey Eve Jacobson</p>
+    <%= image_tag "http://static.tumblr.com/otq4jsy/MJXliqbug/mm.png", :id => "logo" %>
+
+    <div id="brand">
+      <p>video editor</p>
+    </div>
+
+    <div id="social-links">
+      <%= link_to image_tag( 'facebook_256.png',  :class => "soc"), 'http://www.facebook.com/lindsey.jacobson',:target => '_blank' %>
+      <%= link_to image_tag( 'twitter_256.png',  :class => "soc"), 'http://twitter.com/LindseyEve',:target => '_blank' %>
+      <%= link_to image_tag( 'linkedin_256.png',  :class => "soc"), 'http://www.linkedin.com/profile/view?id=73869820',:target => '_blank' %>
+      <%= link_to image_tag( 'wordpress_256.png',  :class => "soc"), 'http://championsbreakfast.wordpress.com/',:target => '_blank' %>
+    </div>
+    <div id="contact">
+      <div class="email-item">
+        <%= link_to "mailto:lindseyevejacobson@gmail.com", :class => "contact-link" do %>
+          <i class="icon icon-envelope"></i>
+          <span>lindseyevejacobson@gmail</span>
+        <% end %>
       </div>
+      <div class="phone-item">
+        <%= link_to "callto:5164592959", :class => "contact-link" do %>
+          <i class="icon icon-info-sign"></i>
+          <span>(516) 459-2959</span>
+        <% end %>
+      </div>
+    </div>
   </div>
+
+
 
   <div id="right">
       <% @videos.each do |video| %>
         <div class="videobox">
-          <%= link_to(video[:video], :rel=> "shadowbox", :"data-link"=>video[:video]) do %>
+          <a href="http://vimeo.com/moogaloop.swf?clip_id=<%= video[:vimeo_id] %>&amp;amp;server=vimeo.com&amp;amp;show_title=1&amp;amp;show_byline=1&amp;amp;autoplay=1" title="<%= video[:title] %>" rel="shadowbox;width=900;height=506;">
             <%= image_tag video[:image], :class => "vidimage" %>
-          <% end %>
+          </a>
         </div>
       <% end %>
     </div>  

@@ -19,7 +19,9 @@
   padding-top: 25px;
 }
 #logo   { width: 100%}
-#brand  { width: 100%; margin-top: 25px;}
+#brand  { width: 100%; margin: 20px 0; color: #354B5E; font-size: 40px;
+  p {font-family:"Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif;}
+}
 
 .videobox {
   float: left;
@@ -29,11 +31,37 @@
   position: relative;
   background-color: #000000;
   vertical-align: middle;
-  padding: -5px 0px 0px 0px;
-  &:hover {}
 }
 
 .vidimage { width: 100%;}
+
+.soc          { width: 47px}
+#contact      { margin-left: 5px;}
+.contact-link { color: #354B5E; font-family:"Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif;
+  &:hover {color: #354B5E; text-decoration: none;}
+
+}
+.icon { font-size: 20px;}
+.email-item {
+  margin-top: 10px;
+  span{font-size: 16px;}
+}
+.phone-item {
+  margin-top: 10px;
+  span{font-size: 22px;}
+}
+
+#contact { margin: 20px 0; }
+
+
+
+
+
+
+// old 
+////////////////////////////////////////////////////
+
+
 
 body { background-color:#CCCCCC;}
 

@@ -1,12 +1,18 @@
 class WelcomeController < ApplicationController
 
-  VIDEOS = [{:video => "https://vimeo.com/77183634&output=embed", :image => "http://assets.nydailynews.com/polopoly_fs/1.1329359!/img/httpImage/image.jpg_gen/derivatives/landscape_635/geno28s-2-web.jpg"},
-            {:video => "https://vimeo.com/77183634", :image => "http://assets.nydailynews.com/polopoly_fs/1.1329359!/img/httpImage/image.jpg_gen/derivatives/landscape_635/geno28s-2-web.jpg"},
-            {:video => "https://vimeo.com/77183634", :image => "http://assets.nydailynews.com/polopoly_fs/1.1329359!/img/httpImage/image.jpg_gen/derivatives/landscape_635/geno28s-2-web.jpg"},
-            {:video => "https://vimeo.com/77183634", :image => "http://assets.nydailynews.com/polopoly_fs/1.1329359!/img/httpImage/image.jpg_gen/derivatives/landscape_635/geno28s-2-web.jpg"},
-            {:video => "https://vimeo.com/77183634", :image => "http://assets.nydailynews.com/polopoly_fs/1.1329359!/img/httpImage/image.jpg_gen/derivatives/landscape_635/geno28s-2-web.jpg"},
-            {:video => "https://vimeo.com/77183634", :image => "http://assets.nydailynews.com/polopoly_fs/1.1329359!/img/httpImage/image.jpg_gen/derivatives/landscape_635/geno28s-2-web.jpg"}
-            ]
+  VIDEOS = [
+            {:vimeo_id => 77183634, :image => "http://b.vimeocdn.com/ts/452/295/452295896_640.jpg", :title => "Bad Medicine"},
+            {:vimeo_id => 77183634, :image => "http://b.vimeocdn.com/ts/452/295/452295896_640.jpg", :title => "Bad Medicine"},
+            {:vimeo_id => 77183634, :image => "http://b.vimeocdn.com/ts/452/295/452295896_640.jpg", :title => "Bad Medicine"},
+            {:vimeo_id => 77183634, :image => "http://b.vimeocdn.com/ts/452/295/452295896_640.jpg", :title => "Bad Medicine"},
+            {:vimeo_id => 77183634, :image => "http://b.vimeocdn.com/ts/452/295/452295896_640.jpg", :title => "Bad Medicine"},
+            {:vimeo_id => 77183634, :image => "http://b.vimeocdn.com/ts/452/295/452295896_640.jpg", :title => "Bad Medicine"},
+            {:vimeo_id => 77183634, :image => "http://b.vimeocdn.com/ts/452/295/452295896_640.jpg", :title => "Bad Medicine"},
+            {:vimeo_id => 77183634, :image => "http://b.vimeocdn.com/ts/452/295/452295896_640.jpg", :title => "Bad Medicine"},
+            {:vimeo_id => 77183634, :image => "http://b.vimeocdn.com/ts/452/295/452295896_640.jpg", :title => "Bad Medicine"},
+            {:vimeo_id => 77183634, :image => "http://b.vimeocdn.com/ts/452/295/452295896_640.jpg", :title => "Bad Medicine"}
+           ]
+
   def index
     @videos = Video.all
   end
