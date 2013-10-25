@@ -1,0 +1,24 @@
+
+<div class="container">
+
+  <div id="left">
+      <%= image_tag "http://static.tumblr.com/otq4jsy/MJXliqbug/mm.png", :id => "logo" %>
+      <div id="brand">
+        <p>Lindsey Eve Jacobson</p>
+        <p>Video Editor</p>
+        <p>Lindsey Eve Jacobson</p>
+      </div>
+  </div>
+
+  <div id="right">
+      <% @videos.each do |video| %>
+        <div class="videobox">
+          <%= link_to(video[:video], :rel=> "shadowbox", :"data-link"=>video[:video]) do %>
+            <%= image_tag video[:image], :class => "vidimage" %>
+          <% end %>
+        </div>
+      <% end %>
+    </div>  
+  </div>
+
+</div>
