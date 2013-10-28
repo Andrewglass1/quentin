@@ -10,10 +10,6 @@ class WelcomeController < ApplicationController
            ]
 
   def index
-    @videos = Video.all
-  end
-
-  def new
     @videos = VIDEOS
   end
 end
