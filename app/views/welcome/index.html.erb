@@ -37,7 +37,7 @@
   <div id="right">
       <% @videos.each do |video| %>
         <div class="videobox">
-          <i class="play icon-play-circle"></i>
+          
           <% if video[:type] == "vimeo" %>
             <%= render :partial => "vimeo", :locals => {:video => video} %>
           <% elsif video[:type] == "youtube" %>

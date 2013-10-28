@@ -2,7 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-
+body { background-color:#CCCCCC;}
 .container { width: 900px; margin: auto; padding-top: 40px; }
 
 #left {
@@ -35,6 +35,8 @@
 
 .vidimage { width: 100%;}
 
+.vidlink{ &:hover{text-decoration: none; opacity: .8;}}
+
 .soc          { width: 47px}
 #contact      { margin-left: 5px;}
 .contact-link { color: #354B5E; font-family:"Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif;
@@ -53,4 +55,11 @@
 
 #contact { margin: 20px 0; }
 
-.play {position: absolute; font-size: 60px; top: 72px; left: 121px; opacity: 0.85;}
+.play {position: absolute;
+       font-size: 60px;
+       top: 72px;
+       left: 121px;
+       opacity: 0.85;
+       color: #354B5E;
+       &:hover{text-decoration: none;}
+}
