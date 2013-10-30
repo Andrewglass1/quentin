@@ -2,26 +2,30 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-body { background-color:#CCCCCC;}
-.container { width: 900px; margin: auto; padding-top: 40px; }
+body { background-color:white;}
+.container { width: 820px; margin: auto; padding-top: 40px; }
 
 #left {
-  width: 200px;
+  width: 185px;
   float: left;
   margin-right: 10px;
   padding: 25px 10px 0px 10px;
-  border-top: 2px solid #000000;
+  border-top: 2px solid #C03FFF;
 }
 #right {
   width: 600px;
   float: left;
-  border-top: 2px solid #000000;
+  border-top: 2px solid #C03FFF;
   padding-top: 25px;
 }
-#logo   { width: 100%}
-#brand  { width: 100%; margin: 20px 0; color: #354B5E; font-size: 40px;
-  p {font-family:"Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif;}
+#logo   { width: 164px;
+          &:hover{cursor: default;}
 }
+#brand  { width: 100%; margin: 20px 0; color: #C03FFF; font-size: 17px;
+  p {font-family: Arial, sans-serif;}
+}
+#name {margin: 0;}
+#editor {margin-top: 5px;}
 
 .videobox {
   float: left;
@@ -29,37 +33,36 @@ body { background-color:#CCCCCC;}
   overflow: hidden;
   margin: 0 5px 10px 5px;
   position: relative;
-  background-color: #000000;
+  background-color: #C03FFF;
   vertical-align: middle;
 }
 
 .vidimage { width: 100%;}
 
-.vidlink{ &:hover{text-decoration: none; opacity: .8;}}
+.vidlink{ &:hover{text-decoration: none; opacity: .85;}}
 
-.soc          { width: 47px}
+.soc          { width: 28px}
 #contact      { margin-left: 5px;}
-.contact-link { color: #354B5E; font-family:"Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif;
-  &:hover {color: #354B5E; text-decoration: none;}
+.contact-link { color: #C03FFF; font-family: Arial, sans-serif;
+  &:hover {color: #C03FFF; text-decoration: none;}
 
 }
-.icon { font-size: 20px;}
+.icon { font-size: 18px;}
 .email-item {
-  margin-top: 10px;
-  span{font-size: 16px;}
+  margin-top: 5px;
+  span{font-size: 13px;}
 }
 .phone-item {
-  margin-top: 10px;
-  span{font-size: 22px;}
+  margin-top: 5px;
+  span{font-size: 13px;}
 }
 
 #contact { margin: 20px 0; }
 
 .play {position: absolute;
-       font-size: 60px;
+       font-size: 59px;
        top: 72px;
        left: 121px;
-       opacity: 0.85;
-       color: #354B5E;
+       color: white;
        &:hover{text-decoration: none;}
 }
