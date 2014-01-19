@@ -18,7 +18,7 @@ class VideosController < ApplicationController
 
     if @video.save
       redirect_to new_video_path
-      flash[:notice] = "You have successfully added a video <a href='/videos/#{@video.id}'>#{@video.title}</a>"
+      flash[:notice] = "You have successfully added a video <a href='/videos/#{@video.id}/edit'>#{@video.title}</a>"
     else
       render 'new'
       flash[:notice] = "There was an issue in adding this video.  Please try again."
