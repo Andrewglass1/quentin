@@ -19,8 +19,47 @@ Shadowbox.init({
 
 </head>
 <body>
+<div class="container">
 
-<%= yield %>
+  <div id="left">
+    <a href="#" onmouseover="document.myimage1.src='https://s3.amazonaws.com/lindseyeve/inverse.png';"   
+                onmouseout="document.myimage1.src='https://s3.amazonaws.com/lindseyeve/normal.png';">
+      <img id="logo" src="https://s3.amazonaws.com/lindseyeve/inverse.png" name="myimage1" />
+    </a>
+
+    <div id="brand">
+      <p id="name">lindsey eve jacobson</p>
+      <p id="editor">video editor</p>
+    </div>
+
+    <div id="contact">
+      <div class="email-item">
+        <%= link_to "mailto:lindseyevejacobson@gmail.com", :class => "contact-link" do %>
+          <i class="icon icon-envelope"></i>
+          <span>lindseyevejacobson@gmail</span>
+        <% end %>
+      </div>
+      <div class="phone-item">
+        <%= link_to "callto:5164592959", :class => "contact-link" do %>
+          <i class="icon icon-info-sign"></i>
+          <span>(516) 459-2959</span>
+        <% end %>
+      </div>
+    </div>
+
+    <div id="social-links">
+      <%= link_to image_tag( 'https://s3.amazonaws.com/lindseyeve/facebook.gif',  :class => "soc"), 'http://www.facebook.com/lindsey.jacobson',:target => '_blank' %>
+      <%= link_to image_tag( 'https://s3.amazonaws.com/lindseyeve/twitter.gif',  :class => "soc"), 'http://twitter.com/LindseyEve',:target => '_blank' %>
+      <%= link_to image_tag( 'https://s3.amazonaws.com/lindseyeve/linkedin.gif',  :class => "soc"), 'http://www.linkedin.com/profile/view?id=73869820',:target => '_blank' %>
+      <%= link_to image_tag( 'https://s3.amazonaws.com/lindseyeve/wordpress.gif',  :class => "soc"), 'http://championsbreakfast.wordpress.com/',:target => '_blank' %>
+    </div>
+  </div>
+
+  <div id="right">
+    <%= yield %>
+  </div>
+</div>
+
 
 </body>
 </html>

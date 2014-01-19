@@ -1,0 +1,20 @@
+<h3>manage your videos</h3>
+<% if flash[:notice] %><p class="flash"><%= raw(flash[:notice]) %></p><% end %>
+
+<table>
+  <thead>
+    <tr>
+      <th class="title"><p>title</p></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @videos.each do |video| %>
+      <tr>
+        <td><p><%= video.title %></p></td>
+        <td><p><%= link_to "edit", edit_video_path(video) %></p></td>
+        <td><p><%= link_to "delete", video_path(video), method: :delete, data: { confirm: 'Are you super serious?' } %></p></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

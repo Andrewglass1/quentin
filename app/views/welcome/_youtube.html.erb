@@ -1,4 +1,4 @@
-<a class= "vidlink" href="http://www.youtube.com/embed/<%= video[:id] %>?autoplay=1" rel="shadowbox" title="<%= video[:title] %>" data-link="http://www.youtube.com/embed/<%= video[:id] %>?autoplay=1">
+<a class= "vidlink" href="http://www.youtube.com/embed/<%= video.host_identifier %>?autoplay=1" rel="shadowbox" title="<%= video.title %>" data-link="http://www.youtube.com/embed/<%= video.host_identifier %>?autoplay=1">
 	<i class="play icon-play-circle"></i>
-  <%= image_tag video[:image], :class => "vidimage" %>
+  <%= image_tag video.image_url, :class => "vidimage" %>
 </a>

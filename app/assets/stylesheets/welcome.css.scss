@@ -4,6 +4,8 @@
 
 body { background-color:white;}
 .container { width: 820px; margin: auto; padding-top: 40px; }
+h1,h2,h3,a { color: #C03FFF; font-family: Arial, sans-serif;}
+
 
 #left {
   width: 185px;
@@ -66,3 +68,13 @@ body { background-color:white;}
        color: white;
        &:hover{text-decoration: none;}
 }
+
+
+//admin
+
+label{ display: inline-block; width: 110px; color: #C03FFF;}
+th {text-align: left; color: #C03FFF; width: 50px;}
+td {color: #C03FFF;}
+.title {width: 220px;}
+.flash {color: #C03FFF; margin-bottom: 50px;}
+.instructions {font-style: italic;}
