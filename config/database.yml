@@ -6,11 +6,11 @@
 production:
   adapter: postgresql
   encoding: unicode
-  database: production
+  database: quentin_production
   pool: 5
 
 development:
   adapter: postgresql
   encoding: unicode
-  database: development
+  database: quentin_development
   pool: 5
