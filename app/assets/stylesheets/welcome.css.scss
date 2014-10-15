@@ -3,15 +3,15 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 body { background-color:white;}
-.container { width: 820px; margin: auto; padding-top: 40px; }
+.container { width: 840px; margin: auto; padding-top: 40px; }
 h1,h2,h3,a { color: #C03FFF; font-family: Arial, sans-serif;}
 
 
 #left {
-  width: 185px;
+  width: 220px;
   float: left;
   margin-right: 10px;
-  padding: 25px 10px 0px 10px;
+  padding-top: 15px;
   border-top: 2px solid #C03FFF;
 }
 #right {
@@ -20,14 +20,23 @@ h1,h2,h3,a { color: #C03FFF; font-family: Arial, sans-serif;}
   border-top: 2px solid #C03FFF;
   padding-top: 25px;
 }
-#logo   { width: 164px;
-          &:hover{cursor: default;}
+#logo{ width: 100%; margin-bottom: 15px;
+  &:hover{cursor: default;}
 }
-#brand  { width: 100%; margin: 20px 0; color: #C03FFF; font-size: 17px;
-  p {font-family: Arial, sans-serif;}
+
+#name, #editor {width: 100%; color: #C03FFF; font-size: 23px; margin-bottom: 15px; font-family: Arial, sans-serif;}
+
+.contact-link { color: #C03FFF; font-family: Arial, sans-serif; font-size: 15px; margin-bottom: 15px; display: block;
+  &:hover {color: #C03FFF; text-decoration: none;}
 }
-#name {margin: 0;}
-#editor {margin-top: 5px;}
+
+
+#social-links {
+  margin-bottom: 15px;
+  .soc{ width: 45px}
+  a{margin-right: 9px;}
+  a.last{margin-right: 0;}
+}
 
 .videobox {
   float: left;
@@ -43,23 +52,7 @@ h1,h2,h3,a { color: #C03FFF; font-family: Arial, sans-serif;}
 
 .vidlink{ &:hover{text-decoration: none; opacity: .85;}}
 
-.soc          { width: 28px}
-#contact      { margin-left: 5px;}
-.contact-link { color: #C03FFF; font-family: Arial, sans-serif;
-  &:hover {color: #C03FFF; text-decoration: none;}
 
-}
-.icon { font-size: 18px;}
-.email-item {
-  margin-top: 5px;
-  span{font-size: 13px;}
-}
-.phone-item {
-  margin-top: 5px;
-  span{font-size: 13px;}
-}
-
-#contact { margin: 20px 0; }
 
 .play {position: absolute;
        font-size: 59px;
