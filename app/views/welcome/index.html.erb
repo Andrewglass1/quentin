@@ -1,9 +1,35 @@
-<% @videos.each do |video| %>
-  <div class="videobox">
-    <% if video.host == "vimeo" %>
-      <%= render :partial => "vimeo", :locals => {:video => video} %>
-    <% elsif video.host == "youtube" %>
-      <%= render :partial => "youtube", :locals => {:video => video} %>
-    <% end %>
+<div id="left">        
+  <a href="#" onmouseover="document.myimage1.src='https://s3.amazonaws.com/lindseyeve/inverse.png';"
+              onmouseout="document.myimage1.src='https://s3.amazonaws.com/lindseyeve/normal.png';">
+    <img id="logo" src="https://s3.amazonaws.com/lindseyeve/inverse.png" name="myimage1" />
+  </a>
+
+  <p id="name">lindsey eve jacobson</p>
+  <p id="editor">video editor</p>
+
+  <div id="social-links">
+    <%= link_to image_tag( 'twitter.png',  :class => "soc"), 'http://twitter.com/LindseyEve',:target => '_blank' %>
+    <%= link_to image_tag( 'fb.png',  :class => "soc"), 'http://www.facebook.com/lindsey.jacobson',:target => '_blank' %>
+    <%= link_to image_tag( 'linked_in.png',  :class => "soc"), 'http://www.linkedin.com/profile/view?id=73869820',:target => '_blank' %>
+    <%= link_to image_tag( 'wordpress.png',  :class => "soc"), 'http://championsbreakfast.wordpress.com/',:class => 'last', :target => '_blank' %>
   </div>
-<% end %>
+
+  <%= link_to "mailto:lindseyevejacobson@gmail.com", :class => "contact-link" do %>
+    lindseyevejacobson@gmail.com
+  <% end %>
+  <%= link_to "callto:5164592959", :class => "contact-link" do %>
+    (516) 459-2959
+  <% end %>
+</div>
+
+<div id="right">
+  <% @videos.each do |video| %>
+    <div class="videobox">
+      <% if video.host == "vimeo" %>
+        <%= render :partial => "vimeo", :locals => {:video => video} %>
+      <% elsif video.host == "youtube" %>
+        <%= render :partial => "youtube", :locals => {:video => video} %>
+      <% end %>
+    </div>
+  <% end %>
+</div>

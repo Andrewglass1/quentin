@@ -63,6 +63,19 @@ h1,h2,h3,a { color: #C03FFF; font-family: Arial, sans-serif;}
 }
 
 
+#wrapper #title{
+    width:80%;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size:10px;
+    margin:0 auto;
+    color:#e3584d;
+    text-shadow:0 1px 1px #fff;
+    padding:0;
+}
+.row{
+    overflow:hidden;
+}
+
 //admin
 
 label{ display: inline-block; width: 110px; color: #C03FFF;}
