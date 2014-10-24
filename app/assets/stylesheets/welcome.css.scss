@@ -24,15 +24,16 @@ h1,h2,h3,a { color: #C03FFF; font-family: Arial, sans-serif;}
   &:hover{cursor: default;}
 }
 
-#name, #editor {width: 100%; color: #C03FFF; font-size: 23px; margin-bottom: 15px; font-family: Arial, sans-serif;}
-
-.contact-link { color: #C03FFF; font-family: Arial, sans-serif; font-size: 15px; margin-bottom: 15px; display: block;
-  &:hover {color: #C03FFF; text-decoration: none;}
+#contact-text{
+  a:hover {text-decoration: none;}
+  .mail-link{
+    margin-top: 8px; display: block; margin-bottom: 8px;
+  }
+  div{ color:#C03FFF; a{color:#C03FFF;}}
 }
 
-
 #social-links {
-  margin-bottom: 15px;
+  margin-top: 10px;
   .soc{ width: 45px}
   a{margin-right: 9px;}
   a.last{margin-right: 0;}
@@ -62,19 +63,6 @@ h1,h2,h3,a { color: #C03FFF; font-family: Arial, sans-serif;}
        &:hover{text-decoration: none;}
 }
 
-
-#wrapper #title{
-    width:80%;
-    font-family: Helvetica, Arial, sans-serif;
-    font-size:10px;
-    margin:0 auto;
-    color:#e3584d;
-    text-shadow:0 1px 1px #fff;
-    padding:0;
-}
-.row{
-    overflow:hidden;
-}
 
 //admin
 
