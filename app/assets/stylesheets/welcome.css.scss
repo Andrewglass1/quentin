@@ -34,31 +34,44 @@ h1,h2,h3,a { color: #C03FFF; font-family: Arial, sans-serif;}
 
 #social-links {
   margin-top: 10px;
-  .soc{ width: 45px}
-  a{margin-right: 9px;}
-  a.last{margin-right: 0;}
+
+  ul {
+    margin: 0;
+    width: 100%;
+    display: table;
+    table-layout: fixed; /* optional */
+  }
+
+  li {
+    padding: 5px;
+    display: table-cell;
+    width: auto;
+    text-align: center;
+  }
 }
 
 .videobox {
   float: left;
-  width: 290px;
+  width: 295px;
   overflow: hidden;
   margin: 0 5px 10px 5px;
   position: relative;
   background-color: #C03FFF;
   vertical-align: middle;
+  &.left {margin-left: 0;}
+  &.right {margin-right: 0;}
 }
 
-.vidimage { width: 290px; height: 163px;}
 
 .vidlink{ &:hover{text-decoration: none; opacity: .85;}}
 
-.play {position: absolute;
-       font-size: 59px;
-       top: 72px;
-       left: 121px;
-       color: white;
-       &:hover{text-decoration: none;}
+.play {
+  position: absolute;
+  font-size: 59px;
+  top: 72px;
+  left: 121px;
+  color: white;
+  &:hover{text-decoration: none;}
 }
 
 
@@ -73,18 +86,21 @@ td {color: #C03FFF;}
 
 
 
-
-
-
 //responsive!
 
 $grid-float-breakpoint: 730px;
+
 @media(max-width:729px){
   .container {width: 100%; padding-top: 0;}
-  #logo {width: 50%; display: block; margin: 0 auto;}
   #left, #right { width: 100%; float: none; border: none;}
+
+  #logo {width: 50%; display: block; margin: 0 auto;}
+
   .videobox {width: 100%; margin: 0 0 15px 0;}
-  .vidimage{width: 100%; height: auto;}
+
+  #social-links {
+    li {padding: 10px;}
+  }
 }
 
 @media(min-width:730px){

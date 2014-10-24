@@ -14,17 +14,18 @@
   </div>
 
   <div id="social-links">
-    <%= link_to image_tag( 'twitter.png',  :class => "soc"), 'http://twitter.com/LindseyEve',:target => '_blank' %>
-    <%= link_to image_tag( 'fb.png',  :class => "soc"), 'http://www.facebook.com/lindsey.jacobson',:target => '_blank' %>
-    <%= link_to image_tag( 'linked_in.png',  :class => "soc"), 'http://www.linkedin.com/profile/view?id=73869820',:target => '_blank' %>
-    <%= link_to image_tag( 'wordpress.png',  :class => "soc saturate"), 'http://championsbreakfast.wordpress.com/',:class => 'last', :target => '_blank' %>
+    <ul>
+      <li><%= link_to image_tag( 'twitter.png',  :class => "soc"), 'http://twitter.com/LindseyEve',:target => '_blank' %></li>
+      <li><%= link_to image_tag( 'fb.png',  :class => "soc"), 'http://www.facebook.com/lindsey.jacobson',:target => '_blank' %></li>
+      <li><%= link_to image_tag( 'linked_in.png',  :class => "soc"), 'http://www.linkedin.com/profile/view?id=73869820',:target => '_blank' %></li>
+      <li><%= link_to image_tag( 'wordpress.png',  :class => "soc"), 'http://championsbreakfast.wordpress.com/',:class => 'last', :target => '_blank' %></li>
   </div>
 
 </div>
 
 <div id="right">
-  <% @videos.each do |video| %>
-    <div class="videobox">
+  <% @videos.each_with_index do |video, index| %>
+    <div class="videobox <%= index % 2 == 0 ? 'left' : 'right' %>">
       <% if video.host == "vimeo" %>
         <%= render :partial => "vimeo", :locals => {:video => video} %>
       <% elsif video.host == "youtube" %>
