@@ -53,8 +53,6 @@ h1,h2,h3,a { color: #C03FFF; font-family: Arial, sans-serif;}
 
 .vidlink{ &:hover{text-decoration: none; opacity: .85;}}
 
-
-
 .play {position: absolute;
        font-size: 59px;
        top: 72px;
@@ -72,3 +70,23 @@ td {color: #C03FFF;}
 .title {width: 220px;}
 .flash {color: #C03FFF; margin-bottom: 50px;}
 .instructions {font-style: italic;}
+
+
+
+
+
+
+//responsive!
+
+$grid-float-breakpoint: 730px;
+@media(max-width:729px){
+  .container {width: 100%; padding-top: 0;}
+  #logo {width: 50%; display: block; margin: 0 auto;}
+  #left, #right { width: 100%; float: none; border: none;}
+  .videobox {width: 100%; margin: 0 0 15px 0;}
+  .vidimage{width: 100%; height: auto;}
+}
+
+@media(min-width:730px){
+
+}
