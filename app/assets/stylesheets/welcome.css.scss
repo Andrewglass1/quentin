@@ -25,6 +25,7 @@ h1,h2,h3,a { color: #C03FFF; font-family: Arial, sans-serif;}
 }
 
 #contact-text{
+  .video-editor {margin: 30px 0;}
   a:hover {text-decoration: none;}
   .mail-link{
     margin-top: 8px; display: block; margin-bottom: 8px;
@@ -33,7 +34,7 @@ h1,h2,h3,a { color: #C03FFF; font-family: Arial, sans-serif;}
 }
 
 #social-links {
-  margin-top: 10px;
+  margin-top: 5px;
 
   ul {
     margin: 0;
