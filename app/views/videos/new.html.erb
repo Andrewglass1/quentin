@@ -5,6 +5,7 @@
   <p><%= f.label :host %><%= f.select :host, options_for_select([["Select One", ""],"vimeo", "youtube"]) %></p>
   <p><%= f.label :host_identifier %> <%= f.text_field :host_identifier %></p>
   <p><%= f.label :image_url %> <%= f.text_field :image_url %></p>
+  <p><%= f.label :image %> <%= f.file_field :image %></p>
   <p><%= f.label :order %> <%= f.text_field :order %></p>
 
   <%= link_to 'Create Video', "#", :onclick => "$('#new_video').submit()" %>
