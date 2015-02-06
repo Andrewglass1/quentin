@@ -6,9 +6,11 @@ Quentin::Application.configure do
       :bucket => ENV['LEJ_AWS_BUCKET'],
       :access_key_id => ENV['LEJ_AWS_ACC_KEY'],
       :secret_access_key => ENV['LEJ_AWS_SEC_ACC_KEY']
-    }
+    },
+    :url => ':s3_domain_url',
+    :path => '/:class/:attachment/:id_partition/:style/:filename',
+    :bucket => ENV['LEJ_AWS_BUCKET']
   }
-
   # Settings specified here will take precedence over those in config/application.rb
 
   # Code is not reloaded between requests
