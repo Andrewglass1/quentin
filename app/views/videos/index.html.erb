@@ -1,3 +1,5 @@
+<%= link_to "back to admin", admin_index_path, class: "admin-btn" %>
+
 <h3>manage your videos, lovey</h3>
 <% if flash[:notice] %><p class="flash"><%= raw(flash[:notice]) %></p><% end %>
 
@@ -12,8 +14,8 @@
     <% @videos.each do |video| %>
       <tr>
         <td><p><%= video.title %></p></td>
-        <td><p><%= link_to "edit", edit_video_path(video) %></p></td>
-        <td><p><%= link_to "delete", video_path(video), method: :delete, data: { confirm: 'Are you super serious?' } %></p></td>
+        <td><p><%= link_to "edit", edit_video_path(video), class: "admin-btn" %></p></td>
+        <td><p><%= link_to "delete", video_path(video), method: :delete, data: { confirm: 'Are you super serious?' }, class: "admin-btn" %></p></td>
       </tr>
     <% end %>
   </tbody>

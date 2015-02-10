@@ -90,7 +90,10 @@ td {color: #C03FFF;}
 .flash {color: #C03FFF; margin-bottom: 50px;}
 .instructions {font-style: italic;}
 
-
+.admin-btn {
+  border: 1px solid #C03FFF; padding: 3px 6px;
+  &:hover, &:focus {background-color: #C03FFF; color: white; text-decoration: none;}
+}
 
 //responsive!
 

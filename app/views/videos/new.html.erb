@@ -1,3 +1,5 @@
+<%= link_to "back to admin", admin_index_path, class: "admin-btn" %>
+
 <h3>Add a new video</h3>
 <% if flash[:notice] %><p class="flash"><%= raw(flash[:notice]) %></p><% end %>
 <%= form_for @video do |f| %>
@@ -8,5 +10,5 @@
   <p><%#= f.label :image %> <%#= f.file_field :image %></p>
   <p><%= f.label :order %> <%= f.text_field :order %></p>
 
-  <%= link_to 'Create Video', "#", :onclick => "$('#new_video').submit()" %>
+  <%= link_to 'Create Video', "#", :onclick => "$('#new_video').submit()", class: "admin-btn" %>
 <% end %>
