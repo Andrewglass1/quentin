@@ -1,9 +1,11 @@
-<div id="index-controller">
+<div id="video-show">
   <div id="left">
     <%= render partial: "layouts/left_bar" %>
   </div>
 
   <div id="right">
+    <h1 class="vid-title"><%= @video.title %></h1>
+
     <% if @video.host == "vimeo" %>
       <%= render :partial => "videos/vimeo", :locals => {:video => @video} %>
     <% elsif @video.host == "youtube" %>

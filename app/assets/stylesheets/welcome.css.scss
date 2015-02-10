@@ -96,6 +96,10 @@ td {color: #C03FFF;}
   &:hover, &:focus {background-color: #C03FFF; color: white; text-decoration: none;}
 }
 
+
+#video-show{
+  .vid-title {text-align: center;}
+}
 //responsive!
 
 $grid-float-breakpoint: 730px;
