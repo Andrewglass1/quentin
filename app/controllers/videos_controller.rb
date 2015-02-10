@@ -21,7 +21,6 @@ class VideosController < ApplicationController
       flash[:notice] = "You have successfully added a video <a href='/videos/#{@video.id}/edit'>#{@video.title}</a>"
     else
       render 'new'
-      flash[:notice] = "There was an issue in adding this video.  Please try again."
     end
   end
 
@@ -34,13 +33,13 @@ class VideosController < ApplicationController
 
   def update
     @video = Video.find(params[:id])
+    @video.update_attributes(video_params)
 
-    if @video.update_attributes(video_params)
+    if @video.save
       redirect_to videos_path
       flash[:notice] = "Successfully updated a video: #{@video.title}"
     else
       render "edit"
-      flash[:notice] = "There was an issue with saving your update. Try again."
     end
   end
 

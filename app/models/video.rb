@@ -1,4 +1,4 @@
 class Video < ActiveRecord::Base
-  # attr_accessible :title, :host, :host_identifier, :image_url, :order
+  validates_presence_of :title, :host, :host_identifier, :image_url, :order
 
 end
