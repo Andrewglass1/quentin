@@ -2,8 +2,9 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+
 body { background-color:white;}
-.container { width: 840px; margin: auto; padding-top: 40px; }
+.container { width: 870px; margin: auto; padding-top: 40px; }
 h1,h2,h3,a { color: #C03FFF; font-family: Arial, sans-serif;}
 
 
@@ -38,6 +39,7 @@ h1,h2,h3,a { color: #C03FFF; font-family: Arial, sans-serif;}
 
   ul {
     margin: 0;
+    padding: 0;
     width: 100%;
     display: table;
     table-layout: fixed; /* optional */
@@ -49,6 +51,7 @@ h1,h2,h3,a { color: #C03FFF; font-family: Arial, sans-serif;}
     width: auto;
     text-align: center;
   }
+  .soc {width: 45px;}
 }
 
 .videobox {
@@ -103,6 +106,7 @@ $grid-float-breakpoint: 730px;
 
   #social-links {
     li {padding: 10px;}
+    .soc {width: initial; max-width: 100%;}
   }
 }
 

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20150210140526) do
+ActiveRecord::Schema.define(:version => 20150210141611) do
 
   create_table "videos", :force => true do |t|
     t.string   "host"
@@ -19,8 +19,12 @@ ActiveRecord::Schema.define(:version => 20150210140526) do
     t.string   "title"
     t.string   "image_url"
     t.integer  "order"
-    t.datetime "created_at",      :null => false
-    t.datetime "updated_at",      :null => false
+    t.datetime "created_at",               :null => false
+    t.datetime "updated_at",               :null => false
+    t.string   "screen_shot_file_name"
+    t.string   "screen_shot_content_type"
+    t.integer  "screen_shot_file_size"
+    t.datetime "screen_shot_updated_at"
   end
 
 end
