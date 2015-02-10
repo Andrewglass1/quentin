@@ -14,8 +14,8 @@
     <% @videos.each do |video| %>
       <tr>
         <td><p><%= video.title %></p></td>
-        <td><p><%= link_to "edit", edit_video_path(video), class: "admin-btn" %></p></td>
-        <td><p><%= link_to "delete", video_path(video), method: :delete, data: { confirm: 'Are you super serious?' }, class: "admin-btn" %></p></td>
+        <td><p><%= link_to "edit", edit_admin_video_path(video), class: "admin-btn" %></p></td>
+        <td><p><%= link_to "delete", admin_video_path(video), method: :delete, data: { confirm: 'Are you super serious?' }, class: "admin-btn" %></p></td>
       </tr>
     <% end %>
   </tbody>
