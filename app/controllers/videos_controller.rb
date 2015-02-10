@@ -14,7 +14,7 @@ class VideosController < ApplicationController
   end
 
   def create
-    @video = Video.new(params[:video])
+    @video = Video.new(video_params)
 
     if @video.save
       redirect_to new_video_path
@@ -35,12 +35,18 @@ class VideosController < ApplicationController
   def update
     @video = Video.find(params[:id])
 
-    if @video.update_attributes(params[:video])
+    if @video.update_attributes(video_params)
       redirect_to videos_path
       flash[:notice] = "Successfully updated a video: #{@video.title}"
     else
       render "edit"
       flash[:notice] = "There was an issue with saving your update. Try again."
     end
+  end
+
+private
+
+  def video_params
+    params.require(:video).permit(:title, :host, :host_identifier, :image_url, :order)
   end
 end
