@@ -1,0 +1,20 @@
+<a href="#" onmouseover="document.myimage1.src='https://s3.amazonaws.com/lindseyeve/inverse.png';"
+            onmouseout="document.myimage1.src='https://s3.amazonaws.com/lindseyeve/normal.png';">
+  <img id="logo" src="https://s3.amazonaws.com/lindseyeve/inverse.png" name="myimage1" />
+</a>
+
+<div id="contact-text">
+  <div>lindsey eve</div>
+  <div>jacobson</div>
+  <div class="video-editor">video editor</div>
+  <div><a class="mail-link" href="mailto:lindseyevejacobson@gmail.com">lindseyevejacobson@gmail.com</a></div>
+  <div><a href="callto:5164592959">(516) 459-2959</a></div>
+</div>
+
+<div id="social-links">
+  <ul>
+    <li><%= link_to image_tag( 'twitter.png',  :class => "soc"), 'http://twitter.com/LindseyEve',:target => '_blank' %></li>
+    <li><%= link_to image_tag( 'fb.png',  :class => "soc"), 'http://www.facebook.com/lindsey.jacobson',:target => '_blank' %></li>
+    <li><%= link_to image_tag( 'linked_in.png',  :class => "soc"), 'http://www.linkedin.com/profile/view?id=73869820',:target => '_blank' %></li>
+    <li><%= link_to image_tag( 'wordpress.png',  :class => "soc"), 'http://championsbreakfast.wordpress.com/',:class => 'last', :target => '_blank' %></li>
+</div>

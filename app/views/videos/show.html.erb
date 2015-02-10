@@ -1,0 +1,13 @@
+<div id="index-controller">
+  <div id="left">
+    <%= render partial: "layouts/left_bar" %>
+  </div>
+
+  <div id="right">
+    <% if @video.host == "vimeo" %>
+      <%= render :partial => "videos/vimeo", :locals => {:video => @video} %>
+    <% elsif @video.host == "youtube" %>
+      <%= render :partial => "videos/youtube", :locals => {:video => @video} %>
+    <% end %>
+  </div>
+</div>

@@ -5,4 +5,5 @@ Quentin::Application.routes.draw do
 
   resources :admin_videos, only: [:edit, :index, :new, :create, :destroy, :update]
   resources :admin, :only => [:index]
+  resources :videos, :only => [:show]
 end
