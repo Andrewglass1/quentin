@@ -4,6 +4,7 @@
   </div>
 
   <div id="right">
+    <%= link_to "View All Videos", root_path %>
     <h1 class="vid-title"><%= @video.title %></h1>
 
     <% if @video.host == "vimeo" %>
