@@ -2,7 +2,7 @@ class AdminVideosController < ApplicationController
   before_filter :redirect_unless_admin
 
   def edit
-    @video = Video.find_by_id(params[:id])
+    @video = Video.friendly.find(params[:id])
   end
 
   def index
@@ -25,14 +25,14 @@ class AdminVideosController < ApplicationController
   end
 
   def destroy
-    @video = Video.find(params[:id])
+    @video = Video.friendly.find(params[:id])
     @video.destroy
     redirect_to admin_videos_path
     flash[:notice] = "You have successfully deleted a video: #{@video.title}"
   end
 
   def update
-    @video = Video.find(params[:id])
+    @video = Video.friendly.find(params[:id])
     @video.update_attributes(video_params)
 
     if @video.save
