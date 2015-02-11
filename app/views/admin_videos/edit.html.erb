@@ -1,6 +1,7 @@
 <%= link_to "back to admin", admin_index_path, class: "admin-btn" %>
 
 <h3>Edit: <strong><%= @video.title %></strong></h3>
+
 <% if flash[:notice] %>
   <p class="flash"><%= raw(flash[:notice]) %></p>
 <% end %>
@@ -9,7 +10,7 @@
   <p class="error"><%= @video.errors.full_messages.join(", ") %></p>
 <% end %>
 
-
+<p><%= link_to video_url(@video), video_url(@video) %></p>
 
 <%= form_for @video, url: admin_video_path(@video), method: :put do |f| %>
   <p><%= f.label :title %> <%= f.text_field :title %></p>
