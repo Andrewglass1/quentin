@@ -1,5 +1,0 @@
-  Video.create(:host => "vimeo", :host_identifier => "77183634", :image_url => "https://s3.amazonaws.com/lindseyeve/bad_medicine.png", :title => "Bad Medicine", :order => 1)
-  Video.create(:host => "vimeo", :host_identifier => "77814644", :image_url => "https://s3.amazonaws.com/lindseyeve/the_collection.png", :title => "The Collection", :order => 2)
-  Video.create(:host => "vimeo", :host_identifier => "77189031", :image_url => "https://s3.amazonaws.com/lindseyeve/graphics_reel.png", :title => "Graphics Reel", :order => 3)
-  Video.create(:host => "youtube", :host_identifier => "oLn54cqwlI8", :image_url => "https://s3.amazonaws.com/lindseyeve/house_i_live_in.png", :title => "The House I Live In Q & A", :order => 4)
-  Video.create(:host => "youtube", :host_identifier => "96oZnzLjcL8", :image_url => "https://s3.amazonaws.com/lindseyeve/bikes.png", :title => "<3 Bikes Vol. 1", :order => 5)

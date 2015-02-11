@@ -46,6 +46,6 @@ class AdminVideosController < ApplicationController
 private
 
   def video_params
-    params.require(:video).permit(:title, :host, :host_identifier, :image_url, :order, :still)
+    params.require(:video).permit(:title, :host, :host_identifier, :order, :still)
   end
 end
