@@ -9,22 +9,24 @@
 # from scratch. The latter is a flawed and unsustainable approach (the more migrations
 # you'll amass, the slower it'll run and the greater likelihood for issues).
 #
-# It's strongly recommended to check this file into your version control system.
+# It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20150210141611) do
+ActiveRecord::Schema.define(version: 20150211003700) do
 
-  create_table "videos", :force => true do |t|
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
+  create_table "videos", force: true do |t|
     t.string   "host"
     t.string   "host_identifier"
     t.string   "title"
     t.string   "image_url"
     t.integer  "order"
-    t.datetime "created_at",               :null => false
-    t.datetime "updated_at",               :null => false
-    t.string   "screen_shot_file_name"
-    t.string   "screen_shot_content_type"
-    t.integer  "screen_shot_file_size"
-    t.datetime "screen_shot_updated_at"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "slug"
   end
+
+  add_index "videos", ["slug"], name: "index_videos_on_slug", using: :btree
 
 end
