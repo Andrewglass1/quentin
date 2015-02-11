@@ -15,6 +15,9 @@ gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) support
 gem "twitter-bootstrap-rails"
 gem 'friendly_id'
 
+gem 'paperclip'
+gem 'aws-sdk', '< 2.0'
+
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
