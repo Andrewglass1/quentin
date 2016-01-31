@@ -17,7 +17,7 @@ gem 'friendly_id'
 
 gem 'paperclip'
 gem 'aws-sdk', '< 2.0'
-
+ gem 'rails_12factor'
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
